@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo_box">
+          <div class="logo">
+            <a href="index.html"><span>Abu</span>Shop</a>
+          </div>
+          <div class="search_top">
+            <input type="text" placeholder="Search Product" />
+          </div>
+        </div>
+
+        <div class="menu">
+          <div class="links">
+            <ul>
+              <li>
+                <a href="pay.html" class="cart_box">
+                  <ion-icon name="card-outline"></ion-icon>
+                  <span>To'lov</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="cart_box">
+                  <div class="cart_count">0</div>
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span>Savatcha</span>
+                </a>
+                <div class="added_product_tocart">
+                  <h4>Savatchaga qo'shilgan mahsulotlar</h4>
+                  <div class="top_cart_container" id="top_cart">
+                    <div id="totaltopcart"></div>
+                    <div class="top_carttotalamount">
+                      <span>Dollir</span>
+                      <span class="amount_added">$0</span>
+                    </div>
+                  </div>
+                  <div class="cart_buttons">
+                    <a href="#" class="btns"> Sotib Olish</a>
+                    <a href="./cart.html" class="btns">Savatga O'tish</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <a href="likes.html" class="cart_box">
+                  <div class="cart_count" id="like_count">0</div>
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Sevimli</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="cart_box">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <span>Kabinet</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart_container">
+        <div class="cart_header">
+          <h4>Savatcha</h4>
+        </div>
+        <div class="cart_body">
+          <div class="carts" id="carts"></div>
+
+          <div class="cart_bill">
+            <div class="bill_top">
+              <div class="bill_title">
+                <h3>
+                  Savatdagi mahsulotlar soni:
+                  <span class="total_cart_count"></span>
+                </h3>
+              </div>
+
+              <div class="total_order_amount">
+                <h4>Jami miqdor:</h4>
+                <h3 class="total_cart_amount"></h3>
+              </div>
+            </div>
+
+            <div class="cart_order_button">
+              <button class="btns">Buyurtma</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
