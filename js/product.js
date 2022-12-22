@@ -12,6 +12,17 @@ async function getProducts(url) {
 
 getProducts(url_product);
 
+const menuBtn = document.querySelector("#menu");
+const closeMenu = document.querySelector("#close_menu");
+const menu = document.querySelector(".responsive_menu");
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.add("active");
+});
+closeMenu.addEventListener("click", () => {
+  menu.classList.remove("active");
+});
+
 // products = [
 //   {
 //     id: 1,

@@ -134,6 +134,7 @@ function renderLike() {
             <div class="like_img">
               <img src=${item.thumbnail} />
             </div>
+            
             <div class="like_info">
               <div class='like_box'>
                 <div class="like_text">
@@ -241,5 +242,3 @@ function numberOfCountFunc(action, id) {
 
   updateCart();
 }
-
-
