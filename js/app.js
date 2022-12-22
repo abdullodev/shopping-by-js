@@ -34,7 +34,7 @@ function showProducts() {
         </div>
 
         <div class="product_buttons">
-            <button class="btns" id='like_btn' onclick="addToLike(${product.id})">
+            <button class="btns" id='like_btn' onclick="addToLike(${product.id}), isLikedFunc(${product.id})">
               <ion-icon name="heart" class='like_icon' style='color:#fff;'></ion-icon>
               <span>Like</span>
             </button>
@@ -51,6 +51,10 @@ function showProducts() {
 
   updateCart();
   updateLike();
+}
+
+function isLikedFunc(id) {
+  return !!carts.find((cart) => cart.id === id);
 }
 
 // like cart

@@ -241,3 +241,5 @@ function numberOfCountFunc(action, id) {
 
   updateCart();
 }
+
+

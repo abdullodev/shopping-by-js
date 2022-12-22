@@ -17,6 +17,10 @@
   <body>
     <div class="container">
       <div class="header">
+        <div class="menu_box">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+
         <div class="logo_box">
           <div class="logo">
             <a href="index.html"><span>Abu</span>Shop</a>
@@ -29,12 +33,21 @@
         <div class="menu">
           <div class="links">
             <ul>
-              <li>
+              <li class="pay_box">
                 <a href="pay.html" class="cart_box">
                   <ion-icon name="card-outline"></ion-icon>
                   <span>To'lov</span>
                 </a>
               </li>
+
+              <li>
+                <a href="likes.html" class="cart_box">
+                  <div class="cart_count" id="like_count">0</div>
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <span>Sevimli</span>
+                </a>
+              </li>
+
               <li>
                 <a href="#" class="cart_box">
                   <div class="cart_count">0</div>
@@ -57,15 +70,7 @@
                 </div>
               </li>
 
-              <li>
-                <a href="likes.html" class="cart_box">
-                  <div class="cart_count" id="like_count">0</div>
-                  <ion-icon name="heart-outline"></ion-icon>
-                  <span>Sevimli</span>
-                </a>
-              </li>
-
-              <li>
+              <li class="pay_box">
                 <a href="#" class="cart_box">
                   <ion-icon name="person-outline"></ion-icon>
                   <span>Kabinet</span>
