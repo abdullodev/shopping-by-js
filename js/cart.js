@@ -43,7 +43,7 @@ function calculateItem() {
 
   document.querySelector(".amount_added").innerHTML =
     "$" + totalAmount.toFixed(2);
-  document.querySelector(".cart_count").innerHTML = totalCount;
+  document.querySelector("#cart_count").innerHTML = totalCount;
   document.querySelector(".total_cart_amount").innerHTML =
     "$" + totalAmount.toFixed(2);
   document.querySelector(".total_cart_count").innerHTML = totalCount;

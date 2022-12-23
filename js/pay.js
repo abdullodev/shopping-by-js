@@ -46,7 +46,7 @@ function calculateItem() {
 
   document.querySelector(".amount_added").innerHTML =
     "$" + totalAmount.toFixed(2);
-  document.querySelector(".cart_count").innerHTML = totalCount;
+  document.querySelector("#cart_count").innerHTML = totalCount;
 }
 
 //show top cart items only three items

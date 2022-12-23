@@ -34,7 +34,7 @@ function showProducts() {
         </div>
 
         <div class="product_buttons">
-            <button class="btns" id='like_btn' onclick="addToLike(${product.id}), isLikedFunc(${product.id})">
+            <button class="btns" id='like_btn' onclick="addToLike(${product.id})">
               <ion-icon name="heart" class='like_icon' style='color:#fff;'></ion-icon>
               <span>Like</span>
             </button>
@@ -51,10 +51,6 @@ function showProducts() {
 
   updateCart();
   updateLike();
-}
-
-function isLikedFunc(id) {
-  return !!carts.find((cart) => cart.id === id);
 }
 
 // like cart
@@ -150,7 +146,7 @@ function calculateItem() {
 
   document.querySelector(".amount_added").innerHTML =
     "$" + totalAmount.toFixed(2);
-  document.querySelector(".cart_count").innerHTML = totalCount;
+  document.querySelector("#cart_count").innerHTML = totalCount;
 }
 
 //show top cart items only three items

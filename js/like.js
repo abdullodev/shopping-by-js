@@ -1,6 +1,5 @@
 let top_cart_div = document.querySelector("#totaltopcart");
 let likes_div = document.querySelector(".like_items");
-let like_count = document.querySelector(".cart_count");
 
 let carts = JSON.parse(localStorage.getItem("carts")) || [];
 let likes = JSON.parse(localStorage.getItem("likes")) || [];
@@ -48,7 +47,7 @@ function calculateItem() {
 
   document.querySelector(".amount_added").innerHTML =
     "$" + totalAmount.toFixed(2);
-  document.querySelector(".cart_count").innerHTML = totalCount;
+  document.querySelector("#cart_count").innerHTML = totalCount;
 }
 
 //show top cart items only three items
